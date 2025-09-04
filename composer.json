@@ -1,0 +1,34 @@
+{
+  "name": "mlangenigroup/machinjiri-installer",
+  "description": "Installer for the Machinjiri PHP framework",
+  "keywords": ["installer", "framework", "mlangeni", "machinjiri"],
+  "homepage": "https://github.com/preciouslyson/machinjiri-installer",
+  "version" : "1.0",
+  "type": "project",
+  "license": "MIT",
+  "bin": ["bin/machinjiri"],
+  "authors": [
+    {
+      "name": "Precious Lyson",
+      "email": "precious.lyson@gmail.com",
+      "homepage": "https://www.facebook.com/precious.lyson.developer",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "mlangenigroupqm@gmail.com",
+    "issues": "https://github.com/preciouslyson/machinjiri-installer/issues",
+    "source": "https://github.com/preciouslyson/machinjiri-installer"
+  },
+  "require": {
+    "php": "^8.4.2",
+    "symfony/console": "^5.3",
+    "symfony/filesystem": "^5.3",
+    "symfony/process": "^5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mlangeni\\Machinjiri\\Installer\\": "src/"
+    }
+  }
+}
