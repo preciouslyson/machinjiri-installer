@@ -1,0 +1,30 @@
+{
+  "name": "mlangenigroup/machinjiri-installer",
+  "description": "Installer for the Machinjiri PHP framework",
+  "type": "composer-plugin",
+  "version": "3.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Precious Lyson",
+      "email": "precious.lyson@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.4.2",
+    "composer-plugin-api": "^2.0",
+    "symfony/console": ">=5.3",
+    "symfony/filesystem": ">=5.3",
+    "symfony/process": ">=5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mlangeni\\Machinjiri\\Core\\Artisans\\Helpers\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "Mlangeni\\Machinjiri\\Core\\Artisans\\Helpers\\InstallerPlugin"
+  },
+  "bin": ["bin/machinjiri"]
+}

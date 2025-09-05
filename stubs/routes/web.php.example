@@ -1,0 +1,21 @@
+<?php
+
+use Mlangeni\Machinjiri\Core\Routing\Router;
+use App\Controllers\WelcomeController;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider
+|
+*/
+
+Router::get('/', [WelcomeController::class, 'index']);
+Router::get('/about', function() {
+    return View::render('about', ['title' => 'About Us']);
+});
+
+// Add your routes here
