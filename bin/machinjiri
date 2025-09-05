@@ -3,7 +3,7 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
-use Mlangeni\Machinjiri\Installer\ProjectCreator;
+use Mlangeni\Machinjiri\Core\Artisans\Helpers\ProjectCreator;
 use Symfony\Component\Console\Application;
 
 $application = new Application('Machinjiri Installer', '1.3.0');

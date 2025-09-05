@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'name' => env('APP_NAME', 'Machinjiri'),
+    'env' => env('APP_ENV', 'production'),
+    'debug' => (bool) env('APP_DEBUG', false),
+    'url' => env('APP_URL', 'http://localhost'),
+    'key' => env('APP_KEY'),
+    'cipher' => 'AES-256-CBC',
+    
+    'providers' => [
+        Mlangeni\Machinjiri\Core\Routing\RoutingServiceProvider::class,
+        Mlangeni\Machinjiri\Core\Database\DatabaseServiceProvider::class,
+        Mlangeni\Machinjiri\Core\View\ViewServiceProvider::class,
+        // Add your custom service providers here
+    ],
+    
+    'aliases' => [
+        'App' => Mlangeni\Machinjiri\Core\Support\App::class,
+        'Config' => Mlangeni\Machinjiri\Core\Support\Config::class,
+        'DB' => Mlangeni\Machinjiri\Core\Database\Database::class,
+        'Route' => Mlangeni\Machinjiri\Core\Routing\Router::class,
+        'View' => Mlangeni\Machinjiri\Core\View\View::class,
+        // Add your custom aliases here
+    ],
+];

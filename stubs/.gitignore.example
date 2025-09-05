@@ -1,0 +1,12 @@
+/vendor/
+/node_modules/
+/storage/*.key
+/.env
+/.idea
+/.vscode
+/.DS_Store
+/composer.lock
+/public/assets/
+/storage/framework/views/*
+/storage/logs/*
+!/storage/.gitkeep
