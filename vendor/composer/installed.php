@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'mlangenigroup/machinjiri-installer',
-        'pretty_version' => '3.0',
-        'version' => '3.0.0.0',
+        'pretty_version' => '4.0',
+        'version' => '4.0.0.0',
         'reference' => null,
         'type' => 'composer-plugin',
         'install_path' => __DIR__ . '/../../',
@@ -11,8 +11,8 @@
     ),
     'versions' => array(
         'mlangenigroup/machinjiri-installer' => array(
-            'pretty_version' => '3.0',
-            'version' => '3.0.0.0',
+            'pretty_version' => '4.0',
+            'version' => '4.0.0.0',
             'reference' => null,
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../../',
